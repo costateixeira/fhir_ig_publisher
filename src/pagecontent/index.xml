@@ -1,0 +1,98 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+
+
+<p>The IHE Mobile and
+Distributed Medication Administration supplement introduces a new generation of
+interoperability mechanisms to be used in distributed and mobile medication
+workflows, namely in the requesting and registering of administration of
+medication, in mobile systems or otherwise distributed systems.</p>
+
+<p>The use of this
+profile supports the administration of medication with a standard way to:</p>
+
+<p>(optionally)
+transmit the instructions for administration</p>
+
+<p>register and exchange
+information about the administration of medication</p>
+
+<p>The Mobile
+Medication Administration profile is intended to be compatible with hospital
+settings, but also community settings on a mobile environment, or where CDA
+documents are not used. For CDA
+documents, refer to the IHE CMA profile.</p>
+
+<p>The content of this
+profile is functionally compatible with the CMA profile: it is the goal of IHE
+Pharmacy to provide one consistent interoperability framework, which can be
+implemented using different technical mechanisms.</p>
+
+
+<p>The MMA Profile
+enables mobile and lightweight web applications to register the planned and
+actual administration of medication.</p>
+
+<p>The uses for MMA
+are:</p>
+
+<p>An application
+for a home care nurse, that receives the requests and informs the nurse about
+the medications that each patient is scheduled to take in a given period.</p>
+
+<p>An application
+(or the same as above) for a Nurse, where the nurse can register the planned
+(as above) or unplanned administration of medication</p>
+
+<p>An application
+for patients to receive updated medication instructions on their mobile device
+and / or register the use of medication, e.g. by scanning the barcodes.</p>
+
+
+<p>Further ahead, the
+IHE Pharmacy Technical Framework will be extended to the entire medication
+circuit, and the MMA profile is not expected to change during that extension.
+In other words, while the MMA profile may incorporate changes due to
+maintenance or changes in the underlying standards, it is not expected to be
+redesigned when the entire medication circuit is implemented.</p>
+
+
+<p>This supplement is intended to be fully compliant with the
+HL7 FHIR specification, providing only use-case driven constraints to aid with
+interoperability, deterministic results, and compatibility with existing
+Profiles.</p>
+
+
+<p>Currently the HL7<sup>®</sup> FHIR<sup>®</sup> standard is
+in “Standard for Test Use” (STU) and may experience a large amount of change
+during this phase. Readers are advised that, while the profiled components in
+this supplement may not accurately reflect the most recent version of the FHIR
+standard, implementations of MMA will be tested as specified in this
+supplement. Changes to the FHIR STU will be integrated into this supplement via
+the formal IHE Change Proposal (CP) process.</p>
+
+
+<p> . To include compatibility with existing IHE
+actors, this profile extends or adds the following actors:</p>
+
+<p><b>Medication Administration Performer</b> – checks for and receives instructions for
+administration of medications to patients, performs the necessary checks before
+administering. </p>
+
+<p><b>Medication Administration Informer</b> – sends the reports of the administration actions
+performed.</p>
+
+<p><b> Medication Administration Request Placer</b> – provides the instance orders of medication
+administrations to the medication Administration Performer.</p>
+
+<p><b>Medication Administration Consumer</b> – receives the reports of administration of
+medications.</p>
+
+
+<p>The structure of
+this profile allows different systems to concur in the administration of
+medications for several patients – whether they are remote systems, mobile
+applications for professionals, or patient apps.</p>
+
+
+</div>
+

@@ -1,0 +1,294 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a data-toggle="tab" href="#sequence">Sequence</a></li>
+                     <li><a data-toggle="tab" href="#details">Details</a></li>
+                     <li><a data-toggle="tab" href="#resources">Resources</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="sequence" class="tab-pane fade in active">
+                        <h3><a name="description"></a>Description
+                        </h3>
+                        <p>This scenario shows the processing of a lab order that is appended to an existing
+                           order. In this scenario, a new task is generated for the fulfillment of the appended
+                           order, and the lab handles that task accordingly.
+                        </p>
+                        <h4><a name="preconditions"></a>Pre-Conditions
+                        </h4>
+                        <p>Previous order exists, specimen already collected.</p>
+                        <h4><a name="postconditions"></a>Post Conditions
+                        </h4>
+                        <p>All is fine.</p><br></br><img alt="Interaction diagram showing flow" src="lab-diagram.png" usemap="#diagram_map"></img><map id="diagram_map" name="diagram_map">
+<area shape="rect" id="id1" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="461,647,556,663"/>
+<area shape="rect" id="id2" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="461,755,565,771"/>
+<area shape="rect" id="id3" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="255,343,382,360"/>
+<area shape="rect" id="id4" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="255,419,382,436"/>
+<area shape="rect" id="id5" href="example-instances.html#req1" title="example-instances.html#req1" alt="" coords="49,248,227,264"/>
+<area shape="rect" id="id6" href="example-instances.html#reql1" title="example-instances.html#reql1" alt="" coords="461,489,672,506"/>
+</map>
+
+                     </div>
+                     <div id="details" class="tab-pane fade">
+                        <h2><a name="details"></a>Details
+                        </h2>
+                        <div>
+                           <table class="cols">
+                              <tr>
+                                 <td>Publisher: (link?) </td>
+                                 <td><a href="versions.html#maturity">Status</a>: draft
+                                 </td>
+                                 <td><a href="versions.html#maturity">Experimental</a>: 
+                                 </td>
+                                 <td><a href="versions.html#maturity">Copyright</a>: 
+                                 </td>
+                              </tr>
+                           </table>
+                           <table class="cols">
+                              <tr>
+                                 <td><a href="versions.html#maturity">Purpose</a>: 
+                                 </td>
+                              </tr>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h3><a name="Actors"></a>Actors
+                           </h3>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>MD</b></td>
+                                    <td>person</td>
+                                    <td>The Clinician</td>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>EMR</b></td>
+                                    <td>entity</td>
+                                    <td>EMR</td>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>Lab Man</b></td>
+                                    <td>person</td>
+                                    <td>Lab Person</td>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>Lab</b></td>
+                                    <td>entity</td>
+                                    <td>Lab</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h3><a name="flow"></a>Process Flow - Add on order blah blah
+                           </h3>
+                           <div xmlns="" class="container">
+                              <div class="row">
+                                 <div class="menu">
+                                    <div class="accordion">
+                                       <div class="accordion-group">
+                                          <div class="accordion-heading area">
+                                             									Main Flow
+                                             									
+                                          </div>
+                                          									
+                                          									start finish
+                                          									
+                                          <div class="accordion-body">
+                                             <div class="accordion-inner">
+                                                <div class="accordion">
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
+                                                      <div class="accordion-body" id="1"><a name="p2">1. </a>Make a call
+                                                         <p></p>
+                                                         		...description...
+                                                         <p></p>
+                                                         <p></p>
+                                                         <p></p>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#2"></a></div>
+                                                      <div class="accordion-body" id="2">
+                                                         		(pause)
+                                                         	
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#3"></a></div>
+                                                      <div class="accordion-body" id="3">Create new EMR order
+                                                         <ul>
+                                                            <div class="accordion-group">
+                                                               <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
+                                                               <div class="accordion-body" id="1"><a name="p2">2. </a>Create serviceorder 
+                                                                  <p></p>
+                                                                  		...description...
+                                                                  <p></p><b>Request</b> (EMR - Clin):   
+                                                                  		<a href="example-instances.html#req1">Request for an extra procedure</a><p></p>
+                                                                  <p></p>
+                                                               </div>
+                                                            </div>
+                                                            <p></p>
+                                                            <p></p>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#4"></a></div>
+                                                      <div class="accordion-body" id="4">Create Lab task
+                                                         <ul>
+                                                            <div class="accordion-group">
+                                                               <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
+                                                               <div class="accordion-body" id="1"><a name="p2">2. </a>Create Lab's task 
+                                                                  <p></p>
+                                                                  		...description...
+                                                                  <p></p><b>Request</b> (EMR - EMR):   
+                                                                  		<a href="example-instances.html#task1">Task</a><p></p>
+                                                                  <p></p>
+                                                               </div>
+                                                            </div>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <div class="accordion-group">
+                                                               <div class="accordion-heading"><a class="accordion-toggle" href="#2"></a></div>
+                                                               <div class="accordion-body" id="2"><a name="p2">2. </a>Send task to Lab 
+                                                                  <p></p>
+                                                                  		...description...
+                                                                  <p></p><b>Request</b> (Lab - EMR):   
+                                                                  		<a href="example-instances.html#task1">Task</a><p></p>
+                                                                  <p></p>
+                                                               </div>
+                                                            </div>
+                                                            <p></p>
+                                                            <p></p>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#5"></a></div>
+                                                      <div class="accordion-body" id="5"><a name="p2">3. </a>Create lab's service order 
+                                                         <p></p>
+                                                         		...description...
+                                                         <p></p><b>Request</b> (Lab - Lab):   
+                                                         		<a href="example-instances.html#reql1">Lab's request for the extra procedure</a><p></p>
+                                                         <p></p>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#6"></a></div>
+                                                      <div class="accordion-body" id="6">
+                                                         		(pause)
+                                                         	
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#7"></a></div>
+                                                      <div class="accordion-body" id="7">
+                                                         		(pause)
+                                                         	
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#8"></a></div>
+                                                      <div class="accordion-body" id="8">Accept task
+                                                         <ul>
+                                                            <div class="accordion-group">
+                                                               <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
+                                                               <div class="accordion-body" id="1"><a name="p2">3. </a>Task accepted
+                                                                  <p></p>
+                                                                  		...description...
+                                                                  <p></p><b>Request</b> (Lab - Lab):   
+                                                                  		<a href="example-instances.html#task1">Task</a><p></p>
+                                                                  <p></p>
+                                                               </div>
+                                                            </div>
+                                                            <p></p>
+                                                            <p></p>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                   <div class="accordion-group">
+                                                      <div class="accordion-heading"><a class="accordion-toggle" href="#9"></a></div>
+                                                      <div class="accordion-body" id="9">Start procedure
+                                                         <ul>
+                                                            <div class="accordion-group">
+                                                               <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
+                                                               <div class="accordion-body" id="1"><a name="p2">3. </a>Task in progress
+                                                                  <p></p>
+                                                                  		...description...
+                                                                  <p></p><b>Request</b> (Lab - Lab):   
+                                                                  		<a href="example-instances.html#task1">Task</a><p></p>
+                                                                  <p></p>
+                                                               </div>
+                                                            </div>
+                                                            <p></p>
+                                                            <p></p>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <p></p>
+                                                   <p></p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="resources" class="tab-pane fade">
+                        <h3>Resources</h3>
+                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate,
+                           pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.
+                           Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                           per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque.
+                           Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec,
+                           feugiat nec, luctus a, lacus.
+                        </p>
+                        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam
+                           ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing
+                           velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula
+                           faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
+                           sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor
+                           ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
+                           commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit
+                           hendrerit.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

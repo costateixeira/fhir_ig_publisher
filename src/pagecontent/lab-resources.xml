@@ -1,0 +1,40 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <h3><a name="description"></a>Description
+   </h3>
+   <p>Bla</p>
+   <h4><a name="preconditions"></a>Pre-Conditions
+   </h4>
+   <p>Previous order exists, specimen already collected.</p>
+   <h4><a name="postconditions"></a>Post Conditions
+   </h4>
+   <p>All is fine.</p><br></br><div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12"></div>
+               <ul class="nav nav-tabs">
+                  <li><a href="lab-diagram.html#">Content</a></li>
+                  <li><a href="lab-details.html#">Details</a></li>
+                  <li class="active"><a href="lab-resources.html#">Resources</a></li>
+               </ul><img alt="Interaction diagram showing flow" src="lab-diagram.png" usemap="#diagram_map"></img><map id="diagram_map" name="diagram_map">
+<area shape="rect" id="id1" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="461,647,556,663"/>
+<area shape="rect" id="id2" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="461,755,565,771"/>
+<area shape="rect" id="id3" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="255,343,382,360"/>
+<area shape="rect" id="id4" href="example-instances.html#task1" title="example-instances.html#task1" alt="" coords="255,419,382,436"/>
+<area shape="rect" id="id5" href="example-instances.html#req1" title="example-instances.html#req1" alt="" coords="49,248,227,264"/>
+<area shape="rect" id="id6" href="example-instances.html#reql1" title="example-instances.html#reql1" alt="" coords="461,489,672,506"/>
+</map>
+
+               <div id="tabs-struc">
+                  <div id="tbl">
+                     <p><b>Structure</b></p>
+                     <p><b>UML Diagram</b> (<a href="formats.html#uml">Legend</a>)
+                     </p>
+                     <p>df sdfs dfsdf</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

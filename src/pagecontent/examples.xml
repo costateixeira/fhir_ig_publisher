@@ -1,0 +1,35 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <p> This page presents some use cases.</p>
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12"><br></br><ul>
+                     <li>
+                        <p><b><a href="lab-scenario.html">Lab Appended request</a></b></p>
+                     </li>
+                     <p>This scenario shows the processing of a lab order that is appended to an existing
+                        order. In this scenario, a new task is generated for the fulfillment of the appended
+                        order, and the lab handles that task accordingly.
+                     </p>
+                  </ul>
+                  <ul>
+                     <li>
+                        <p><b><a href="mma-scenario.html">Mobile Medication Administration</a></b></p>
+                     </li>
+                     <p>This scenario demonstrates the process of getting the relevant medication instructions
+                        for a patient visit and reporting the results of administration. The scenario is as
+                        follows: After the prescription is issued, the institution schedules each individual
+                        administration event in the Medication Administration Record (MAR). When preparing
+                        for a visit, the nurse queries the MAR for the scheduled administrations, obtaining
+                        a bundle of records. The nurse then performs the care activities and registers the
+                        results in the device. Upon synchronization of the device and the institution, the
+                        results of administration are uploaded to the EHR, thus updating the MAR.
+                     </p>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

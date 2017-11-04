@@ -1,0 +1,232 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <h3><a name="description"></a>Description
+   </h3>
+   <p>This scenario demonstrates the process of getting the relevant medication instructions
+      for a patient visit and reporting the results of administration. The scenario is as
+      follows: After the prescription is issued, the institution schedules each individual
+      administration event in the Medication Administration Record (MAR). When preparing
+      for a visit, the nurse queries the MAR for the scheduled administrations, obtaining
+      a bundle of records. The nurse then performs the care activities and registers the
+      results in the device. Upon synchronization of the device and the institution, the
+      results of administration are uploaded to the EHR, thus updating the MAR.
+   </p>
+   <h4><a name="preconditions"></a>Pre-Conditions
+   </h4>
+   <p>Medication administration requests are in the EHR / MAR, scheduled for each individual
+      intake.
+   </p>
+   <h4><a name="postconditions"></a>Post Conditions
+   </h4>
+   <p>Medication administration Reports are submitted, EHR is updated.</p>
+   <p></p>
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12">
+                  <ul class="nav nav-tabs">
+                     <li><a href="mma-diagram.html#">Content</a></li>
+                     <li class="active"><a href="mma-details.html#">Details</a></li>
+                     <li><a href="mma-resources.html#">Resources</a></li>
+                  </ul>
+                  <div>
+                     <table class="cols">
+                        <tr>
+                           <td>Publisher: (link?) </td>
+                           <td><a href="versions.html#maturity">Status</a>: draft
+                           </td>
+                           <td><a href="versions.html#maturity">Experimental</a>: 
+                           </td>
+                           <td><a href="versions.html#maturity">Copyright</a>: 
+                           </td>
+                        </tr>
+                     </table>
+                     <table class="cols">
+                        <tr>
+                           <td><a href="versions.html#maturity">Purpose</a>: Purpose: this serves to enable remote performing of medication administration, by
+                              using remote / mobile devices to a) Get the planned medication administrations and
+                              b) Record the performing of these administrations without a permanent connection to
+                              the EHR.
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div>
+                     <h2>Actors</h2>
+                     <table class="grid">
+                        <tbody>
+                           <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Description</th>
+                           </tr>
+                           <tr xmlns="">
+                              <td><b>Nurse</b></td>
+                              <td>person</td>
+                              <td>The Nurse</td>
+                           </tr>
+                           <tr xmlns="">
+                              <td><b>Nurse's Tablet</b></td>
+                              <td>entity</td>
+                              <td>The entity that receives the Administration Requests to show the nurse to perform
+                                 them
+                              </td>
+                           </tr>
+                           <tr xmlns="">
+                              <td><b>MAR / Scheduler</b></td>
+                              <td>entity</td>
+                              <td>The Medication Administration Order Placer</td>
+                           </tr>
+                           <tr xmlns="">
+                              <td><b>MAR / EHR</b></td>
+                              <td>entity</td>
+                              <td>The entity that receives the Medication Administration reports</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div>Mobile Medication Administration
+                     <p xmlns=""></p><a xmlns="" name="p2">1. </a>1. Get today's schedule
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>P1. Query Administration Requests
+                     <ul xmlns=""><a name="p2">2. </a>2.Query for medication administration orders,\n- For today's shifts\n- For today's
+                        patients
+                        <p></p>
+                        				...description...
+                        <p></p><b>Request</b> (OP - MAP):   
+                        		<a href="example-instances.html#iherxqry">Search query1</a><p></p><b>Response</b> (OP - MAP):   
+                        		<a href="example-instances.html#iherx001bundle">Bundle of Medication Requests</a><p></p>
+                        <p></p>
+                        <p></p>
+                     </ul>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     			(...)
+                     	
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">4. </a>Notify (alert)
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">5. </a>Read orders
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     			(...)
+                     	
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">5. </a>Ask if patient took meds
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">Alternative:
+                        			</a>Check if patient took drugs
+                     <div xmlns="" id="accordion">
+                        <h3><a name="p2">Yes, patient took drugs. </a></h3>
+                        <div>Register Meds taken
+                           <ul><a name="p2">1a. </a>Register Meds taken
+                              <p></p>
+                              				...description...
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                           </ul>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <h3><a name="p2">No, patient did not take drugs. </a></h3>
+                        <div>Register Meds NOT taken
+                           <ul><a name="p2">1b. </a>Register Meds NOT taken
+                              <p></p>
+                              				...description...
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                           </ul>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <h3><a name="p2">Not clear. </a></h3>
+                        <div>
+                           			(...)
+                           	
+                           <p></p>
+                           <p></p>
+                        </div>
+                     </div>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     			(...)
+                     	
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">6. </a>Administer drug
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p><a xmlns="" name="p2">7. </a>Register administration
+                     <p xmlns=""></p>
+                     				...description...
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     			(...)
+                     	
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>P2. Update administration reports
+                     <ul xmlns=""><a name="p2">8. </a>Nurse updates administration report
+                        <p></p>
+                        				...description...
+                        <p></p><b>Request</b> (MAP - Nurse):   
+                        		<a href="example-instances.html#iheadm002">Lunch meds - taken</a><p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                     </ul>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                     			(...)
+                     	
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>P3. Upload administration reports
+                     <ul xmlns=""><a name="p2">9. </a>Refresh
+                        <p></p>
+                        				...description...
+                        <p></p><b>Request</b> (MAC - MAP):   
+                        		<a href="example-instances.html#"></a><p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                     </ul>
+                     <p xmlns=""></p>
+                     <p xmlns=""></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
