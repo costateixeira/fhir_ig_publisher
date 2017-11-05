@@ -54,6 +54,10 @@
 			<kind value="page"/>
 		</page>
 
+	<page>
+		<source value="vol1.html"/>
+		<title value="Volume 1"/>
+		<kind value="page"/>
 		<page>
 			<source value="mma_1.1.distributed_medication_management.html"/>
 			<title value="Distributed Medication Management"/>
@@ -94,6 +98,7 @@
 				<kind value="page"/>
 			</page>
 		</page>
+	</page>
 		<!--
 -->
 		<page>
