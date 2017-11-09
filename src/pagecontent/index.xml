@@ -1,6 +1,9 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
 
 
+{{:toc}}
+
+
 <p>The IHE Mobile and
 Distributed Medication Administration supplement introduces a new generation of
 interoperability mechanisms to be used in distributed and mobile medication

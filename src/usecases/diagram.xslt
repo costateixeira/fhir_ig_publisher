@@ -127,12 +127,12 @@ participant</xsl:if>
 <xsl:template  match="request">
 <xsl:variable name="iid" select="./resourceId/@value"/>
 <xsl:variable name="vid" select="./versionId/@value"/>
-<xsl:text> [[example-instances.html#</xsl:text><xsl:value-of select="./resourceId/@value"/> <xsl:text> </xsl:text><xsl:value-of select="/ExampleScenario/instance[resourceId/@value=$iid]/name/@value"/> <xsl:apply-templates select="./versionId"/>]]<xsl:text>\n</xsl:text></xsl:template>
+<xsl:text> [[#</xsl:text><xsl:value-of select="./resourceId/@value"/> <xsl:text> </xsl:text><xsl:value-of select="/ExampleScenario/instance[resourceId/@value=$iid]/name/@value"/> <xsl:apply-templates select="./versionId"/>]]<xsl:text>\n</xsl:text></xsl:template>
 
 <xsl:template  match="response">
 <xsl:variable name="iid" select="./resourceId/@value"/>
 <xsl:variable name="vid" select="./versionId/@value"/>
-<xsl:text> [[example-instances.html#</xsl:text><xsl:value-of select="./resourceId/@value"/> <xsl:text> </xsl:text><xsl:value-of select="/ExampleScenario/instance[resourceId/@value=$iid]/name/@value"/> <xsl:apply-templates select="./versionId"/>]]<xsl:text>\n</xsl:text></xsl:template>
+<xsl:text> [[#</xsl:text><xsl:value-of select="./resourceId/@value"/> <xsl:text> </xsl:text><xsl:value-of select="/ExampleScenario/instance[resourceId/@value=$iid]/name/@value"/> <xsl:apply-templates select="./versionId"/>]]<xsl:text>\n</xsl:text></xsl:template>
 
 
 

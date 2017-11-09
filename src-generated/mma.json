@@ -13,7 +13,7 @@
     "txCache": "txcache",
     "history" : "history.html",
     "qa": "../temp/qa",
-    "specification": "http://hl7.org/fhir/stu3/"
+    "specification": "http://localhost:8000/fhirspec/"
   },
   "pre-process": [
     {"folder": "../framework/assets",

@@ -11,7 +11,9 @@
                   </ul>
                   <div class="tab-content">
                      <div id="sequence" class="tab-pane fade in active">
-                        <h3><a name="description"></a>Description
+                        <h3><a name="description"></a>
+                           Description
+                           
                         </h3>
                         <p>This scenario demonstrates the process of getting the relevant medication instructions
                            for a patient visit and reporting the results of administration. The scenario is as
@@ -22,39 +24,56 @@
                            results in the device. Upon synchronization of the device and the institution, the
                            results of administration are uploaded to the EHR, thus updating the MAR.
                         </p>
-                        <h4><a name="preconditions"></a>Pre-Conditions
+                        <h4><a name="preconditions"></a>
+                           Pre-Conditions
+                           
                         </h4>
                         <p>Medication administration requests are in the EHR / MAR, scheduled for each individual
                            intake.
                         </p>
-                        <h4><a name="postconditions"></a>Post Conditions
+                        <h4><a name="postconditions"></a>
+                           Post Conditions
+                           
                         </h4>
-                        <p>Medication administration Reports are submitted, EHR is updated.</p><br></br><img alt="Interaction diagram showing flow" src="mma-diagram.png" usemap="#diagram_map"></img><map id="diagram_map" name="diagram_map">
-<area shape="rect" id="id1" href="example-instances.html#iherxqry" title="example-instances.html#iherxqry" alt="" coords="295,252,379,269"/>
-<area shape="rect" id="id2" href="example-instances.html#iheadm002" title="example-instances.html#iheadm002" alt="" coords="65,986,180,1002"/>
-<area shape="rect" id="id3" href="example-instances.html#iherx001bundle" title="example-instances.html#iherx001bundle" alt="" coords="295,269,475,285"/>
-<area shape="rect" id="id4" href="example-instances.html#iheadm001" title="example-instances.html#iheadm001" alt="" coords="295,1109,503,1126"/>
+                        <p>Medication administration Reports are submitted, EHR is updated.</p>
+                        <p></p><img alt="Interaction diagram showing flow" src="mma-diagram.png" usemap="#diagram_map"></img><map id="diagram_map" name="diagram_map">
+<area data-tab="#resources" shape="rect" id="id1" href="#iheadm001" title="#iheadm001" alt="" coords="295,1109,365,1126"/>
+<area data-tab="#resources" shape="rect" id="id2" href="#iherxqry" title="#iherxqry" alt="" coords="295,252,379,269"/>
+<area data-tab="#resources" shape="rect" id="id3" href="#iheadm002" title="#iheadm002" alt="" coords="65,986,180,1002"/>
+<area data-tab="#resources" shape="rect" id="id4" href="#iherx001bundle" title="#iherx001bundle" alt="" coords="295,269,475,285"/>
 </map>
-
                      </div>
                      <div id="details" class="tab-pane fade">
-                        <h2><a name="details"></a>Details
+                        <h2><a name="details"></a>
+                           Details
+                           
                         </h2>
                         <div>
                            <table class="cols">
                               <tr>
-                                 <td>Publisher: (link?) </td>
-                                 <td><a href="versions.html#maturity">Status</a>: draft
+                                 <td>
+                                    Publisher: (link?)
+                                    
                                  </td>
-                                 <td><a href="versions.html#maturity">Experimental</a>: 
+                                 <td><a href="versions.html#maturity">Status</a>
+                                    :
+                                    draft
                                  </td>
-                                 <td><a href="versions.html#maturity">Copyright</a>: 
+                                 <td><a href="versions.html#maturity">Experimental</a>
+                                    :
+                                    
+                                 </td>
+                                 <td><a href="versions.html#maturity">Copyright</a>
+                                    :
+                                    
                                  </td>
                               </tr>
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="versions.html#maturity">Purpose</a>: Purpose: this serves to enable remote performing of medication administration, by
+                                 <td><a href="versions.html#maturity">Purpose</a>
+                                    :
+                                    Purpose: this serves to enable remote performing of medication administration, by
                                     using remote / mobile devices to a) Get the planned medication administrations and
                                     b) Record the performing of these administrations without a permanent connection to
                                     the EHR.
@@ -65,7 +84,9 @@
                            <p></p>
                         </div>
                         <div>
-                           <h3><a name="Actors"></a>Actors
+                           <h3><a name="Actors"></a>
+                              Actors
+                              
                            </h3>
                            <table class="grid">
                               <tbody>
@@ -102,28 +123,30 @@
                            <p></p>
                         </div>
                         <div>
-                           <h3><a name="flow"></a>Process Flow - Mobile Medication Administration
+                           <h3><a name="flow"></a>
+                              Process Flow -
+                              Mobile Medication Administration
                            </h3>
                            <div xmlns="" class="container">
                               <div class="row">
                                  <div class="menu">
                                     <div class="accordion">
                                        <div class="accordion-group">
-                                          <div class="accordion-heading area">
-                                             									Main Flow
-                                             									
-                                          </div>
-                                          									
-                                          									start finish
-                                          									
+                                          <div class="accordion-heading area">Main Flow</div>
+                                          
+                                          start finish
+                                          
                                           <div class="accordion-body">
                                              <div class="accordion-inner">
                                                 <div class="accordion">
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                      <div class="accordion-body" id="1"><a name="p2">1. </a>1. Get today's schedule
+                                                      <div class="accordion-body" id="1"><a name="p2">1
+                                                            .
+                                                            </a>1. Get today's schedule
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -137,13 +160,26 @@
                                                          <ul>
                                                             <div class="accordion-group">
                                                                <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                               <div class="accordion-body" id="1"><a name="p2">2. </a>2.Query for medication administration orders,\n- For today's shifts\n- For today's
+                                                               <div class="accordion-body" id="1"><a name="p2">2
+                                                                     .
+                                                                     </a>2.Query for medication administration orders,\n- For today's shifts\n- For today's
                                                                   patients
                                                                   <p></p>
-                                                                  		...description...
-                                                                  <p></p><b>Request</b> (OP - MAP):   
-                                                                  		<a href="example-instances.html#iherxqry">Search query1</a><p></p><b>Response</b> (OP - MAP):   
-                                                                  		<a href="example-instances.html#iherx001bundle">Bundle of Medication Requests</a><p></p>
+                                                                  ...description...
+                                                                  
+                                                                  <p></p><b>Request</b>
+                                                                  (
+                                                                  OP
+                                                                  -
+                                                                  MAP
+                                                                  ):
+                                                                  <a href="example-instances.html#iherxqry">Search query1</a><p></p><b>Response</b>
+                                                                  (
+                                                                  OP
+                                                                  -
+                                                                  MAP
+                                                                  ):
+                                                                  <a href="example-instances.html#iherx001bundle">Bundle of Medication Requests</a><p></p>
                                                                </div>
                                                             </div>
                                                             <p></p>
@@ -155,18 +191,18 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#3"></a></div>
-                                                      <div class="accordion-body" id="3">
-                                                         		(pause)
-                                                         	
-                                                      </div>
+                                                      <div class="accordion-body" id="3">(pause)</div>
                                                    </div>
                                                    <p></p>
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#4"></a></div>
-                                                      <div class="accordion-body" id="4"><a name="p2">4. </a>Notify (alert)
+                                                      <div class="accordion-body" id="4"><a name="p2">4
+                                                            .
+                                                            </a>Notify (alert)
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -176,9 +212,12 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#5"></a></div>
-                                                      <div class="accordion-body" id="5"><a name="p2">5. </a>Read orders
+                                                      <div class="accordion-body" id="5"><a name="p2">5
+                                                            .
+                                                            </a>Read orders
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -188,18 +227,18 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#6"></a></div>
-                                                      <div class="accordion-body" id="6">
-                                                         		(pause)
-                                                         	
-                                                      </div>
+                                                      <div class="accordion-body" id="6">(pause)</div>
                                                    </div>
                                                    <p></p>
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#7"></a></div>
-                                                      <div class="accordion-body" id="7"><a name="p2">5. </a>Ask if patient took meds
+                                                      <div class="accordion-body" id="7"><a name="p2">5
+                                                            .
+                                                            </a>Ask if patient took meds
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -209,12 +248,15 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#8"></a></div>
-                                                      <div class="accordion-body" id="8"><a name="p2">Alternative:
-                                                            			</a>Check if patient took drugs
+                                                      <div class="accordion-body" id="8"><a name="p2">
+                                                            Alternative:
+                                                            </a>Check if patient took drugs
                                                          <div class="accordion-inner">
                                                             <div class="accordion">
                                                                <div class="accordion-group">
-                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="1" data-toggle="collapse" href="#1">1 - Yes, patient took drugs</a></div>
+                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="1" data-toggle="collapse" href="#1">1
+                                                                        -
+                                                                        Yes, patient took drugs</a></div>
                                                                   <div class="accordion-body" id="1">
                                                                      <div class="accordion-group">
                                                                         <div class="accordion-heading"><a class="accordion-toggle" href="#2"></a></div>
@@ -222,9 +264,12 @@
                                                                            <ul>
                                                                               <div class="accordion-group">
                                                                                  <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                                                 <div class="accordion-body" id="1"><a name="p2">1a. </a>Register Meds taken
+                                                                                 <div class="accordion-body" id="1"><a name="p2">1a
+                                                                                       .
+                                                                                       </a>Register Meds taken
                                                                                     <p></p>
-                                                                                    		...description...
+                                                                                    ...description...
+                                                                                    
                                                                                     <p></p>
                                                                                     <p></p>
                                                                                     <p></p>
@@ -240,7 +285,9 @@
                                                                   </div>
                                                                </div>
                                                                <div class="accordion-group">
-                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="2" data-toggle="collapse" href="#2">2 - No, patient did not take drugs</a></div>
+                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="2" data-toggle="collapse" href="#2">2
+                                                                        -
+                                                                        No, patient did not take drugs</a></div>
                                                                   <div class="accordion-body" id="2">
                                                                      <div class="accordion-group">
                                                                         <div class="accordion-heading"><a class="accordion-toggle" href="#2"></a></div>
@@ -248,9 +295,12 @@
                                                                            <ul>
                                                                               <div class="accordion-group">
                                                                                  <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                                                 <div class="accordion-body" id="1"><a name="p2">1b. </a>Register Meds NOT taken
+                                                                                 <div class="accordion-body" id="1"><a name="p2">1b
+                                                                                       .
+                                                                                       </a>Register Meds NOT taken
                                                                                     <p></p>
-                                                                                    		...description...
+                                                                                    ...description...
+                                                                                    
                                                                                     <p></p>
                                                                                     <p></p>
                                                                                     <p></p>
@@ -266,14 +316,13 @@
                                                                   </div>
                                                                </div>
                                                                <div class="accordion-group">
-                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="3" data-toggle="collapse" href="#3">3 - Not clear</a></div>
+                                                                  <div class="accordion-heading ponto"><a class="accordion-toggle" data-parent="3" data-toggle="collapse" href="#3">3
+                                                                        -
+                                                                        Not clear</a></div>
                                                                   <div class="accordion-body" id="3">
                                                                      <div class="accordion-group">
                                                                         <div class="accordion-heading"><a class="accordion-toggle" href="#2"></a></div>
-                                                                        <div class="accordion-body" id="2">
-                                                                           		(pause)
-                                                                           	
-                                                                        </div>
+                                                                        <div class="accordion-body" id="2">(pause)</div>
                                                                      </div>
                                                                      <p></p>
                                                                      <p></p>
@@ -287,18 +336,18 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#9"></a></div>
-                                                      <div class="accordion-body" id="9">
-                                                         		(pause)
-                                                         	
-                                                      </div>
+                                                      <div class="accordion-body" id="9">(pause)</div>
                                                    </div>
                                                    <p></p>
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#10"></a></div>
-                                                      <div class="accordion-body" id="10"><a name="p2">6. </a>Administer drug
+                                                      <div class="accordion-body" id="10"><a name="p2">6
+                                                            .
+                                                            </a>Administer drug
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -308,9 +357,12 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#11"></a></div>
-                                                      <div class="accordion-body" id="11"><a name="p2">7. </a>Register administration
+                                                      <div class="accordion-body" id="11"><a name="p2">7
+                                                            .
+                                                            </a>Register administration
                                                          <p></p>
-                                                         		...description...
+                                                         ...description...
+                                                         
                                                          <p></p>
                                                          <p></p>
                                                          <p></p>
@@ -320,10 +372,7 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#12"></a></div>
-                                                      <div class="accordion-body" id="12">
-                                                         		(pause)
-                                                         	
-                                                      </div>
+                                                      <div class="accordion-body" id="12">(pause)</div>
                                                    </div>
                                                    <p></p>
                                                    <p></p>
@@ -333,11 +382,19 @@
                                                          <ul>
                                                             <div class="accordion-group">
                                                                <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                               <div class="accordion-body" id="1"><a name="p2">8. </a>Nurse updates administration report
+                                                               <div class="accordion-body" id="1"><a name="p2">8
+                                                                     .
+                                                                     </a>Nurse updates administration report
                                                                   <p></p>
-                                                                  		...description...
-                                                                  <p></p><b>Request</b> (MAP - Nurse):   
-                                                                  		<a href="example-instances.html#iheadm002">Lunch meds - taken</a><p></p>
+                                                                  ...description...
+                                                                  
+                                                                  <p></p><b>Request</b>
+                                                                  (
+                                                                  MAP
+                                                                  -
+                                                                  Nurse
+                                                                  ):
+                                                                  <a href="example-instances.html#iheadm002">Lunch meds - taken</a><p></p>
                                                                   <p></p>
                                                                </div>
                                                             </div>
@@ -350,10 +407,7 @@
                                                    <p></p>
                                                    <div class="accordion-group">
                                                       <div class="accordion-heading"><a class="accordion-toggle" href="#14"></a></div>
-                                                      <div class="accordion-body" id="14">
-                                                         		(pause)
-                                                         	
-                                                      </div>
+                                                      <div class="accordion-body" id="14">(pause)</div>
                                                    </div>
                                                    <p></p>
                                                    <p></p>
@@ -363,11 +417,19 @@
                                                          <ul>
                                                             <div class="accordion-group">
                                                                <div class="accordion-heading"><a class="accordion-toggle" href="#1"></a></div>
-                                                               <div class="accordion-body" id="1"><a name="p2">9. </a>Refresh
+                                                               <div class="accordion-body" id="1"><a name="p2">9
+                                                                     .
+                                                                     </a>Refresh
                                                                   <p></p>
-                                                                  		...description...
-                                                                  <p></p><b>Request</b> (MAC - MAP):   
-                                                                  		<a href="example-instances.html#"></a><p></p>
+                                                                  ...description...
+                                                                  
+                                                                  <p></p><b>Request</b>
+                                                                  (
+                                                                  MAC
+                                                                  -
+                                                                  MAP
+                                                                  ):
+                                                                  <a href="example-instances.html#"></a><p></p>
                                                                   <p></p>
                                                                </div>
                                                             </div>
@@ -390,22 +452,109 @@
                      </div>
                      <div id="resources" class="tab-pane fade">
                         <h3>Resources</h3>
-                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate,
-                           pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.
-                           Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                           per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque.
-                           Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec,
-                           feugiat nec, luctus a, lacus.
-                        </p>
-                        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam
-                           ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing
-                           velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula
-                           faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
-                           sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor
-                           ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
-                           commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit
-                           hendrerit.
-                        </p>
+                        <h2>Resources</h2>
+                        <p xmlns=""></p>
+                        <h3 xmlns="">MedicationRequest</h3>
+                        <table xmlns="" class="grid">
+                           <tbody>
+                              <tr>
+                                 <th>Artifact</th>
+                                 <th>Description</th>
+                                 <th>Version</th>
+                                 <th>Created by step</th>
+                                 <th>Creating actor</th>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001" href="../examples/iherx001"><b>Initial Prescription</b></a></td>
+                                 <td>The initial prescription which describes "medication X, 3 times per day" - the exact
+                                    scheduling is not   in the initial prescription (it is left for the care teams to
+                                    decide on the schedule).
+                                 </td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.001" href="../examples/iherx001.001"><b>Request for day 1, morning</b></a></td>
+                                 <td>The administration request for day 1, morning</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.002" href="../examples/iherx001.002"><b>Request for day 1, lunch</b></a></td>
+                                 <td>The administration request for day 1, lunch</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.003" href="../examples/iherx001.003"><b>Request for day 1, evening</b></a></td>
+                                 <td>The administration request for day 1, evening</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.004" href="../examples/iherx001.004"><b>Request for day 2, morning</b></a></td>
+                                 <td>The administration request for day 2, morning</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.005" href="../examples/iherx001.005"><b>Request for day 2, lunch</b></a></td>
+                                 <td>The administration request for day 2, lunch</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001.006" href="../examples/iherx001.006"><b>Request for day 2, evening</b></a></td>
+                                 <td>The administration request for day 2, evening</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherx001bundle" href="../examples/iherx001bundle"><b>Bundle of Medication Requests</b></a></td>
+                                 <td>All the medication Requests for Day 1</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p xmlns=""></p>
+                        <h3 xmlns="">MedicationAdministration</h3>
+                        <table xmlns="" class="grid">
+                           <tbody>
+                              <tr>
+                                 <th>Artifact</th>
+                                 <th>Description</th>
+                                 <th>Version</th>
+                                 <th>Created by step</th>
+                                 <th>Creating actor</th>
+                              </tr>
+                              <tr>
+                                 <td><a name="iheadm001a" href="../examples/iheadm001a"><b>Morning meds - taken</b></a></td>
+                                 <td>Administration report for day 1, morning: Taken</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iheadm001b" href="../examples/iheadm001b"><b>Morning meds - not taken</b></a></td>
+                                 <td>Administration report for day 1, morning: NOT Taken</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td><a name="iheadm002" href="../examples/iheadm002"><b>Lunch meds - taken</b></a></td>
+                                 <td>Administration report for day 1, lunch: Taken</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p xmlns=""></p>
+                        <h3 xmlns="">SearchParameter</h3>
+                        <table xmlns="" class="grid">
+                           <tbody>
+                              <tr>
+                                 <th>Artifact</th>
+                                 <th>Description</th>
+                                 <th>Version</th>
+                                 <th>Created by step</th>
+                                 <th>Creating actor</th>
+                              </tr>
+                              <tr>
+                                 <td><a name="iherxqry" href="../examples/iherxqry"><b>Search query1</b></a></td>
+                                 <td>The search administration request for day 1, morning</td>
+                                 <td style="background-color:whitesmoke" colspan="3"></td>
+                              </tr>
+                           </tbody>
+                        </table>
                      </div>
                   </div>
                </div>

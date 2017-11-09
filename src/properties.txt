@@ -2,7 +2,7 @@
 guidename=mma
 copyrightyear=2015+
 version=2.0
-fhirspec=http://hl7.org/fhir/stu3/
+fhirspec=http://localhost:8000/fhirspec/
 #excludexml=Yes
 #excludejson=Yes
 #excludettl=Yes

@@ -30,6 +30,23 @@
 								</li>
 							</ul>
 
+
+							<div>
+
+
+
+								<h2>Resources</h2>
+								<xsl:for-each-group select="ExampleScenario/instance/resourceType" group-by="@value">
+									<xsl:apply-templates select="../resourceType"/>
+								</xsl:for-each-group>
+
+
+
+							</div>
+
+
+
+
 							<img alt="Interaction diagram showing flow" src="{$pref}diagram.png" usemap="#diagram_map"/>
 							<xsl:value-of select="unparsed-text('./diagram.cmapx')" disable-output-escaping="yes"/>
 
@@ -76,6 +93,54 @@
 
 
 	</xsl:template>
+
+
+
+
+	<xsl:template  match="resourceType">
+		<br/>
+		<xsl:variable name="thisResourceType" select="./@value"/>
+		<h3>
+			<xsl:value-of select="$thisResourceType"/>
+		</h3>
+
+		<table class="grid">
+			<tbody>
+				<tr>
+					<th>Artifact</th>
+					<th>Description</th>
+					<th>Version</th>
+					<th>Created by step</th>
+					<th>Creating actor</th>
+				</tr>
+				<xsl:apply-templates select="../../instance[resourceType/@value=$thisResourceType]"/>
+
+			</tbody>
+		</table>												
+
+	</xsl:template>
+
+
+	<xsl:template  match="instance">
+		<tr>
+
+			<!--		
+&lt;a name=&quot;
+<xsl:value-of select="resourceId/@value"/>
+&quot;&gt;
+&lt;/a&gt;
+-->
+
+
+			<td>
+				<a name="{resourceId/@value}"></a><b><xsl:value-of select="name/@value"/></b>
+			</td>
+			<td><xsl:value-of select="description/@value"/></td>
+			<td style="background-color:whitesmoke" colspan="3"/>
+		</tr>
+
+	</xsl:template>
+
 
 
 
