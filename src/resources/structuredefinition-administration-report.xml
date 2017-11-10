@@ -3,7 +3,8 @@
   <meta>
     <lastUpdated value="2017-08-22T17:01:04.302+02:00" />
   </meta>
-  <url value="http://zeora.net/StructureDefinition/AdministrationReport" />
+   <id value="administration-report"/>
+ <url value="http://ihe.net/fhir/profiles/mma/StructureDefinition/administration-report" />
   <name value="AdministrationReport" />
   <status value="draft" />
   <date value="2017-08-22T16:50:12.245+02:00" />

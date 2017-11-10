@@ -4,6 +4,9 @@
 <p class="link">-
             <a href="#1">Profiles</a>
 </p>
+<p class="link">-
+            <a href="#2">Conformance Statements</a>
+</p>
 </div>
 <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
 <h2 class="self-link-parent">
@@ -17,17 +20,43 @@
 <tbody>
 <tr>
 <td style="column-width:30%">
-<a href="AdministrationReport.html">
+<a href="administration-report.html">
                         •  Medication Administration Report</a>
 </td>
 <td>Medication Administration Report</td>
 </tr>
 <tr>
 <td style="column-width:30%">
-<a href="AdministrationRequest.html">
+<a href="administration-request.html">
                         •  Administration Request</a>
 </td>
 <td>Administration Request</td>
+</tr>
+</tbody>
+</table>
+</p>
+<h2 class="self-link-parent">
+<a name="2"> </a>Conformance Statements <a href="#2" title="link to here" class="self-link">
+<img src="assets/images/link.svg" width="20" class="self-link" height="20"/>
+</a>
+</h2>
+<p>Conformance statements for each actor</p>
+<p>
+<table>
+<tbody>
+<tr>
+<td style="column-width:30%">
+<a href="ihe-mma-consumer.html">
+                        •  Medication Administration Consumer</a>
+</td>
+<td>Medication Administration Consumer</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="ihe-mma-informer.html">
+                        •  Medication Administration Informer</a>
+</td>
+<td>Medication Administration Informer</td>
 </tr>
 </tbody>
 </table>

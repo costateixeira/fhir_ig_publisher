@@ -3,7 +3,8 @@
   <meta>
     <lastUpdated value="2017-08-22T21:03:20.942+02:00" />
   </meta>
-  <url value="http://zeora.net/StructureDefinition/AdministrationRequest" />
+  <id value="ihe-mma-request"/>
+  <url value="http://zeora.net/StructureDefinition/administration-request" />
   <name value="AdministrationRequest" />
   <status value="draft" />
   <date value="2017-08-22T16:49:53.455+02:00" />

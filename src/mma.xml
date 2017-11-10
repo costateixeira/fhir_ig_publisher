@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../schema/fhir-single.xsd">
 	<id value="mma"/>
-	<url value="http://zeora.net/ImplementationGuide/mma"/>
+	<url value="http://ihe.net/fhir/profiles/mma"/>
 	<name value="Mobile Medication Administration"/>
 	<status value="draft"/>
 	<experimental value="true"/>
@@ -28,7 +28,7 @@
 			<description value="Medication Administration Report"/>
 			<acronym value="PHARM-3"/>
 			<sourceReference>
-				<reference value="StructureDefinition/AdministrationReport"/>
+				<reference value="StructureDefinition/administration-report"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -37,7 +37,29 @@
 			<description value="Administration Request"/>
 			<acronym value="PHARM-2"/>
 			<sourceReference>
-				<reference value="StructureDefinition/AdministrationRequest"/>
+				<reference value="StructureDefinition/administration-request"/>
+			</sourceReference>
+		</resource>
+	</package>
+	<package>
+		<name value="Conformance Statements"/>
+		<description value="Conformance statements for each actor"/>
+		<resource>
+			<example value="false"/>
+			<name value="Medication Administration Consumer"/>
+			<description value="Medication Administration Consumer"/>
+			<acronym value="MAC"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ihe-mma-consumer"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<name value="Medication Administration Informer"/>
+			<description value="Medication Administration Informer"/>
+			<acronym value="MAI"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ihe-mma-informer"/>
 			</sourceReference>
 		</resource>
 	</package>
