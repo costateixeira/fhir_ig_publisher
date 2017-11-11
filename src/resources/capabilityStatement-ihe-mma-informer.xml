@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="ihe-mma-informer"/>
-  <url value="http://ihe.net/fhir/CapabilityStatement/ihe-mma-informer" />
+  <url value="http://ihe.net/fhir/profiles/mma/CapabilityStatement/ihe-mma-informer" />
 	<version value="20171031" />
 	<title value="IHE Universal Barcode Processor Capability Statement" />
 	<name value="IHE-UBP Barcode Processor" />

@@ -4,7 +4,7 @@
     <lastUpdated value="2017-08-22T17:01:04.302+02:00" />
   </meta>
   <id value="ihe-mma-consumer"/>
-  <url value="http://ihe.net/fhir/CapabilityStatement/ihe-mma-consumer" />
+  <url value="http://ihe.net/fhir/profiles/mma/CapabilityStatement/ihe-mma-consumer" />
   <version value="20171031" />
   <title value="IHE Universal Barcode Processor Capability Statement" />
   <name value="IHE-UBP Barcode Processor" />

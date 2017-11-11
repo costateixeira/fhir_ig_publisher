@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../schema/fhir-single.xsd">
 	<id value="mma"/>
-	<url value="http://ihe.net/fhir/profiles/mma"/>
+	<url value="http://ihe.net/fhir/profiles/mma/ImplementationGuide/mma"/>
 	<name value="Mobile Medication Administration"/>
 	<status value="draft"/>
 	<experimental value="true"/>
@@ -46,13 +46,22 @@
 		<description value="Conformance statements for each actor"/>
 		<resource>
 			<example value="false"/>
-			<name value="Medication Administration Consumer"/>
-			<description value="Medication Administration Consumer"/>
-			<acronym value="MAC"/>
+			<name value="Medication Administration Request Placer"/>
+			<description value="Medication Administration Request Placer"/>
+			<acronym value="MRP"/>
 			<sourceReference>
-				<reference value="CapabilityStatement/ihe-mma-consumer"/>
+				<reference value="CapabilityStatement/ihe-mma-requestplacer"/>
 			</sourceReference>
-		</resource>
+		</resource> 
+		<resource>
+			<example value="false"/>
+			<name value="Medication Administration Performer"/>
+			<description value="Medication Administration Performer"/>
+			<acronym value="MAP"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ihe-mma-performer"/>
+			</sourceReference>
+		</resource> 
 		<resource>
 			<example value="false"/>
 			<name value="Medication Administration Informer"/>
@@ -61,9 +70,17 @@
 			<sourceReference>
 				<reference value="CapabilityStatement/ihe-mma-informer"/>
 			</sourceReference>
+		</resource> 
+		<resource>
+			<example value="false"/>
+			<name value="Medication Administration Consumer"/>
+			<description value="Medication Administration Consumer"/>
+			<acronym value="MAC"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/ihe-mma-consumer"/>
+			</sourceReference>
 		</resource>
 	</package>
-
 	<binary value="lab-diagram.png"/>
 	<binary value="mma-diagram.png"/>
 
