@@ -71,8 +71,9 @@ $("[data-tab]").on('click', function() {
       <!-- /segment-header -->
       <div id="segment-navbar" class="segment">
          <!-- segment-navbar -->
-         <div id="stripe" />
-         <div class="container">
+         <div id="stripe">
+         </div>
+		  <div class="container">
             <!-- container -->
             <!-- HEADER CONTENT -->
             <nav class="navbar navbar-inverse">
@@ -83,7 +84,9 @@ $("[data-tab]").on('click', function() {
                      <span class="icon-bar" />
                   </button>
                   <a class="navbar-brand hidden" href="{{site.data.fhir.path}}index.html">FHIR</a>
-                  <div class="nav-collapse collapse navbar-inverse-collapse">{% include menu.xml %}</div>
+                  <div class="nav-collapse collapse navbar-inverse-collapse">
+				  {% include menu.xml %}
+				  </div>
                   <!-- /.nav-collapse -->
                </div>
                <!-- /.container -->
