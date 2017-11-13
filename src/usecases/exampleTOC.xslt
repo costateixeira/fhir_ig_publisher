@@ -8,6 +8,8 @@
 <div class="container"><!-- container -->
 <div class="row">
 <div class="inner-wrapper"><!-- CONTENT CONTENT -->
+<!-- {% include toc.xml %} -->
+
 <div class="col-12">
 <br></br>
 

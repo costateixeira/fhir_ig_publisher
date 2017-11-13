@@ -1,4 +1,6 @@
-@for /f "usebackq delims=|" %%f in (`dir /b "*.xml"`) do (
+@for /f "usebackq delims=|" %%f in (`dir /b "..\resources\examplescenario*.xml"`) do (
+
+copy ..\resources\%%f .
 
 java -jar saxon9he.jar -s:%%f -xsl:diagram.xslt -o:diagram.txt 
 
@@ -18,11 +20,12 @@ echo move %%~nf-details.xml ..\pagecontent
 echo java -jar saxon9he.jar -s:%%f -xsl:resources_template.xslt -o:%%~nf-resources.xml pref="%%~nf-"
 echo move %%~nf-resources.xml ..\pagecontent
 
-java -jar saxon9he.jar -s:mma.xml -xsl:exampleTOC.xslt -o:toc.xhtml
+java -jar saxon9he.jar -s:%%f -xsl:exampleTOC.xslt -o:toc.xhtml
 move toc.xhtml ..\pagecontent\examples.xml
 
+del %%f
 del diagram.txt
-echo del diagram.cmapx
+del diagram.cmapx
 
 )
 

@@ -6,16 +6,7 @@
             <div class="inner-wrapper">
                <div class="col-12"><br></br><ul>
                      <li>
-                        <p><b><a href="lab-scenario.html">Lab Appended request</a></b></p>
-                     </li>
-                     <p>This scenario shows the processing of a lab order that is appended to an existing
-                        order. In this scenario, a new task is generated for the fulfillment of the appended
-                        order, and the lab handles that task accordingly.
-                     </p>
-                  </ul>
-                  <ul>
-                     <li>
-                        <p><b><a href="mma-scenario.html">Mobile Medication Administration</a></b></p>
+                        <p><b><a href="examplescenario-mma1-scenario.html">Mobile Medication Administration</a></b></p>
                      </li>
                      <p>This scenario demonstrates the process of getting the relevant medication instructions
                         for a patient visit and reporting the results of administration. The scenario is as

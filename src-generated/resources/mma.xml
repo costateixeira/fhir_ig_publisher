@@ -186,13 +186,8 @@
 			<title value="Use Cases"/>
 			<kind value="page"/>
 			<page>
-				<source value="mma-scenario.html"/>
+				<source value="examplescenario-mma1-scenario.html"/>
 				<title value="Use Case 1 - Home Care Nurse shift"/>
-				<kind value="page"/>
-			</page>
-			<page>
-				<source value="lab-scenario.html"/>
-				<title value="Use Case 2 - Other use case"/>
 				<kind value="page"/>
 			</page>
 		</page>
