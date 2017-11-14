@@ -141,6 +141,11 @@
 		<!--
 -->
 		<page>
+			<source value="capstatement.html"/>
+			<title value="Capability"/>
+			<kind value="page"/>
+		</page>
+		<page>
 			<source value="artifacts.html"/>
 			<title value="Artifact List"/>
 			<kind value="page"/>
