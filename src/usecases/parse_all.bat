@@ -14,18 +14,17 @@ ren diagram.cmapx2 diagram.cmapx
 java -jar saxon9he.jar -s:%%f -xsl:full_template.xslt -o:%%~nf-scenario.xml pref="%%~nf-"
 move %%~nf-scenario.xml ..\pagecontent
 
-echo java -jar saxon9he.jar -s:%%f -xsl:details_template.xslt -o:%%~nf-details.xml pref="%%~nf-"
-echo move %%~nf-details.xml ..\pagecontent
-
-echo java -jar saxon9he.jar -s:%%f -xsl:resources_template.xslt -o:%%~nf-resources.xml pref="%%~nf-"
-echo move %%~nf-resources.xml ..\pagecontent
 
 java -jar saxon9he.jar -s:%%f -xsl:exampleTOC.xslt -o:toc.xhtml
 move toc.xhtml ..\pagecontent\examples.xml
+
 
 del %%f
 del diagram.txt
 del diagram.cmapx
 
 )
+
+java -jar saxon9he.jar -s:..\resources\glossary.xml -xsl:glossary.xslt -o:..\pagecontent\mma_4.glossary.xml
+
 
