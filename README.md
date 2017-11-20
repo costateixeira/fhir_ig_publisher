@@ -1,4 +1,8 @@
-# sdc
-Structured Data Capture Implementation Guide
 
-This is a [FHIR](http://hl7.org/fhir) implementation guide focused on using the Questionnaire and QuestionnaireResponse resources to allow creation, automated population and subsequent submission of forms.  It was initially created under the sponsorship of the U.S. Office of the National Coordinator for Healthcare (ONC).
+# fhir_ig_publishing
+Framework for publishing FHIR Implementation Guides
+
+This is a [FHIR](http://hl7.org/fhir) implementation guide that provides a few features not (yet) available in the main build:
+
+* Rendering ExampleScenarios
+* Glossary Management
