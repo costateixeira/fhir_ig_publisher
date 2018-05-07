@@ -19,152 +19,150 @@
 			<code value="US"/>
 		</coding>
 	</jurisdiction>
-	<package>
-		<name value="Profiles"/>
-		<description value="Constraints on resources"/>
-		<resource>
-			<example value="false"/>
-			<name value="Medication Administration Report"/>
-			<description value="Medication Administration Report"/>
-			<acronym value="PHARM-3"/>
-			<sourceReference>
+	<license value="Apache-2.0"/>
+	
+	
+	<definition>
+		<package>
+			<name value="Profiles"/>
+			<description value="Constraints on resources"/>
+		</package>
+		<package>
+			<name value="Conformance Statements"/>
+			<description value="Conformance statements for each actor"/>
+		</package>
+			<resource>
+				<reference>
 				<reference value="StructureDefinition/administration-report"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<name value="Administration Request"/>
-			<description value="Administration Request"/>
-			<acronym value="PHARM-2"/>
-			<sourceReference>
+				</reference>
+				<name value="Medication Administration Report"/>
+				<description value="Medication Administration Report"/>
+				<exampleBoolean value="false"/>
+			</resource>
+			<resource>
+				<reference>
 				<reference value="StructureDefinition/administration-request"/>
-			</sourceReference>
-		</resource>
-	</package>
-	<package>
-		<name value="Conformance Statements"/>
-		<description value="Conformance statements for each actor"/>
-		<resource>
-			<example value="false"/>
-			<name value="Medication Administration Request Placer"/>
-			<description value="Medication Administration Request Placer"/>
-			<acronym value="MRP"/>
-			<sourceReference>
+				</reference>
+				<name value="Administration Request"/>
+				<description value="Administration Request"/>
+				<exampleBoolean value="false"/>
+			</resource>
+			<resource>
+				<reference>
 				<reference value="CapabilityStatement/ihe-mma-requestplacer"/>
-			</sourceReference>
-		</resource> 
-		<resource>
-			<example value="false"/>
-			<name value="Medication Administration Performer"/>
-			<description value="Medication Administration Performer"/>
-			<acronym value="MAP"/>
-			<sourceReference>
+				</reference>
+				<name value="Medication Administration Request Placer"/>
+				<description value="Medication Administration Request Placer"/>
+				<exampleBoolean value="false"/>
+			</resource> 
+			<resource>
+				<reference>
 				<reference value="CapabilityStatement/ihe-mma-performer"/>
-			</sourceReference>
-		</resource> 
-		<resource>
-			<example value="false"/>
-			<name value="Medication Administration Informer"/>
-			<description value="Medication Administration Informer"/>
-			<acronym value="MAI"/>
-			<sourceReference>
+				</reference>
+				<name value="Medication Administration Performer"/>
+				<description value="Medication Administration Performer"/>
+				<exampleBoolean value="false"/>
+			</resource> 
+			<resource>
+				<reference>
 				<reference value="CapabilityStatement/ihe-mma-informer"/>
-			</sourceReference>
-		</resource> 
-		<resource>
-			<example value="false"/>
-			<name value="Medication Administration Consumer"/>
-			<description value="Medication Administration Consumer"/>
-			<acronym value="MAC"/>
-			<sourceReference>
+				</reference>
+				<name value="Medication Administration Informer"/>
+				<description value="Medication Administration Informer"/>
+				<exampleBoolean value="false"/>
+			</resource> 
+			<resource>
+				<reference>
 				<reference value="CapabilityStatement/ihe-mma-consumer"/>
-			</sourceReference>
-		</resource>
-	</package>
-	<binary value="lab-diagram.png"/>
-	<binary value="mma-diagram.png"/>
+				</reference>
+				<name value="Medication Administration Consumer"/>
+				<description value="Medication Administration Consumer"/>
+				<exampleBoolean value="false"/>
+			</resource>
+		
 
 	<page>
-		<source value="toc.html"/>
+		<nameUrl value="toc.html"/>
 		<title value="Table of Contents"/>
-		<kind value="page"/>
+		<generation value="html"/>
 		<page>
-			<source value="index.html"/>
+			<nameUrl value="index.html"/>
 			<title value="MMA Home Page"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 
 	<page>
-		<source value="vol1.html"/>
+		<nameUrl value="vol1.html"/>
 		<title value="Volume 1"/>
-		<kind value="page"/>
+		<generation value="html"/>
 		<page>
-			<source value="mma_1.1.distributed_medication_management.html"/>
+			<nameUrl value="mma_1.1.distributed_medication_management.html"/>
 			<title value="Distributed Medication Management"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="mma_1.2.mobile_medication_administration.html"/>
+			<nameUrl value="mma_1.2.mobile_medication_administration.html"/>
 			<title value="Mobile Medication Administration"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="mma_3.1.actor_summary_definitions.html"/>
+			<nameUrl value="mma_3.1.actor_summary_definitions.html"/>
 			<title value="Actor Summary Definitions"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="mma_3.2.transaction_summary_definitions.html"/>
+			<nameUrl value="mma_3.2.transaction_summary_definitions.html"/>
 			<title value="Transaction Summary Definitions"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>	
 		<page>
-			<source value="mma_4.glossary.html"/>
+			<nameUrl value="mma_4.glossary.html"/>
 			<title value="Glossary entries"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="mma_5.mma_profile.html"/>
+			<nameUrl value="mma_5.mma_profile.html"/>
 			<title value="MMA Profile"/>
-			<kind value="page"/>
+			<generation value="html"/>
 			<page>
-				<source value="mma_5.1.actors_transactions_content_modules.html"/>
+				<nameUrl value="mma_5.1.actors_transactions_content_modules.html"/>
 				<title value="Actors Transactions Content Modules"/>
-				<kind value="page"/>
+				<generation value="html"/>
 			</page>
 			<page>
-				<source value="mma_5.2.actor_descriptions_and_profile_requirements.html"/>
+				<nameUrl value="mma_5.2.actor_descriptions_and_profile_requirements.html"/>
 				<title value="Actor Descriptions and Profile Requirements"/>
-				<kind value="page"/>
+				<generation value="html"/>
 			</page>
 		</page>
 	</page>
 		<!--
 -->
 		<page>
-			<source value="capstatement.html"/>
+			<nameUrl value="capstatement.html"/>
 			<title value="Capability"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="artifacts.html"/>
+			<nameUrl value="artifacts.html"/>
 			<title value="Artifact List"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 		<page>
-			<source value="examples.html"/>
+			<nameUrl value="examples.html"/>
 			<title value="Use Cases"/>
-			<kind value="page"/>
+			<generation value="html"/>
 			<page>
-				<source value="examplescenario-mma1-scenario.html"/>
+				<nameUrl value="examplescenario-mma1-scenario.html"/>
 				<title value="Use Case 1 - Home Care Nurse shift"/>
-				<kind value="page"/>
+				<generation value="html"/>
 			</page>
 		</page>
 		<page>
-			<source value="downloads.html"/>
+			<nameUrl value="downloads.html"/>
 			<title value="Downloads"/>
-			<kind value="page"/>
+			<generation value="html"/>
 		</page>
 	</page>
+	</definition>	
 </ImplementationGuide>

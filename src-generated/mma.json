@@ -13,7 +13,7 @@
     "txCache": "txcache",
     "history" : "history.html",
     "qa": "../temp/qa",
-    "specification": "http://localhost:8000/fhirspec/"
+    "specification": "http://hl7.org/implement/standards/fhir/"
   },
   "pre-process": [
     {"folder": "../framework/assets",
@@ -92,17 +92,5 @@
   "spreadsheets": [
   ],
   "resources": {
-    "StructureDefinition/administration-report":{
-    },
-    "StructureDefinition/administration-request":{
-    },
-    "CapabilityStatement/ihe-mma-requestplacer":{
-    },
-    "CapabilityStatement/ihe-mma-performer":{
-    },
-    "CapabilityStatement/ihe-mma-informer":{
-    },
-    "CapabilityStatement/ihe-mma-consumer":{
-    }
   }
 }
