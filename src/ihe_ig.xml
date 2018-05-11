@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../schema/fhir-single.xsd">
 	<id value="ihe_ig"/>
 	<url value="http://ihe.net/fhir/profiles/mma/ImplementationGuide/ihe_ig"/>
-	<name value="Mobile Medication Administration"/>
+	<name value="IHE Profile Template"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<publisher value="myself"/>
