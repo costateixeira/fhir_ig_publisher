@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <meta>
-    <lastUpdated value="2017-08-22T21:03:20.942+02:00" />
-  </meta>
   <id value="administration-request"/>
   <url value="http://ihe.net/fhir/profiles/mma/StructureDefinition/administration-request" />
   <name value="AdministrationRequest" />

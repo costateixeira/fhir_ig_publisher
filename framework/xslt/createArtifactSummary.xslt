@@ -7,7 +7,7 @@
     <div>
       <div class="itoc">
         <p>Artifact Packages</p>
-        <xsl:for-each select="f:package">
+        <xsl:for-each select="f:definition/f:package">
           <p class="link">-
             <a href="#{position()}">
               <xsl:value-of select="f:name/@value"/>
@@ -16,7 +16,8 @@
         </xsl:for-each>
       </div>
       <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
-      <xsl:for-each select="f:package">
+      <xsl:for-each select="f:definition/f:package">
+		<xsl:variable name="pid" select="./f:name/@value" />
         <h2 class="self-link-parent">
           <a name="{position()}">
             <xsl:value-of select="' '"/>
@@ -26,24 +27,21 @@
             <img src="assets/images/link.svg" width="20" class="self-link" height="20"/>
           </a>
         </h2>
-        <xsl:apply-templates select="."/>
-      </xsl:for-each>
-    </div>
-  </xsl:template>
-  <xsl:template match="f:package">
+<!--        <xsl:apply-templates select=".."/> -->
+<!-- -->
     <p>
-      <xsl:value-of select="f:description/@value"/>
+      <xsl:value-of select="../f:description/@value"/>
     </p>
     <p>
       <table>
         <tbody>
-          <xsl:for-each select="f:resource">
+          <xsl:for-each select="../f:resource[f:package/@value=$pid]">
             <tr>
               <td style="column-width:30%">
                 <xsl:choose>
-                  <xsl:when test="f:sourceReference">
-                    <xsl:variable name="type" select="substring-before(f:sourceReference/f:reference/@value, '/')"/>
-                    <xsl:variable name="id" select="substring-after(f:sourceReference/f:reference/@value, '/')"/>
+                  <xsl:when test="f:reference">
+                    <xsl:variable name="type" select="substring-before(f:reference/f:reference/@value, '/')"/>
+                    <xsl:variable name="id" select="substring-after(f:reference/f:reference/@value, '/')"/>
                     <xsl:variable name="href">
                       <xsl:choose>
                         <xsl:when test="$type='ValueSet' and not(f:example/@value='true' or f:purpose/@value='example')">
@@ -86,6 +84,70 @@
         </tbody>
       </table>
     </p>
+
+<!-- -->
+
+      </xsl:for-each>
+    </div>
+  </xsl:template>
+  <xsl:template match="f:definition">
+<!-- 
+    <p>
+      <xsl:value-of select="f:description/@value"/>
+    </p>
+    <p>
+      <table>
+        <tbody>
+          <xsl:for-each select="f:resource[f:package/@value=123]">
+            <tr>
+              <td style="column-width:30%">
+                <xsl:choose>
+                  <xsl:when test="f:reference">
+                    <xsl:variable name="type" select="substring-before(f:reference/f:reference/@value, '/')"/>
+                    <xsl:variable name="id" select="substring-after(f:reference/f:reference/@value, '/')"/>
+                    <xsl:variable name="href">
+                      <xsl:choose>
+                        <xsl:when test="$type='ValueSet' and not(f:example/@value='true' or f:purpose/@value='example')">
+                          <xsl:value-of select="concat('valueset-', $id, '.html')"/>
+                        </xsl:when>
+                        <xsl:when test="starts-with($id, 'ext')">
+                          <xsl:value-of select="concat('extension-', $id, '.html')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:value-of select="concat($id, '.html')"/>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:variable>
+                    <a href="{$href}">
+                      &#160;&#160;&#x2022;&#160;&#160;<xsl:value-of select="f:name/@value"/>
+                    </a>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:variable name="href">
+                      <xsl:choose>
+                        <xsl:when test="starts-with(f:sourceUri/@value, 'ext-')">
+                          <xsl:value-of select="concat('extension-', substring-before(sourceUri/@value, '.xml'), '.html')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:value-of select="concat(substring-before(sourceUri/@value, '.xml'), '.html')"/>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:variable>
+                    <a href="{$href}">
+                      &#160;&#160;&#x2022;&#160;&#160;<xsl:value-of select="f:name/@value"/>
+                    </a>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </td>
+              <td>
+                <xsl:value-of select="f:description/@value" disable-output-escaping="yes"/>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </p>
+	-->
   </xsl:template>
   <xsl:template match="f:package" mode="first">
     <tr>

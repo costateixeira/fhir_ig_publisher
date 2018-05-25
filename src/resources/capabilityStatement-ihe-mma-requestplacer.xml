@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
+	<id value="ihe-mma-requestplacer"/>
 	<url value="http://ihe.net/fhir/profiles/mma/CapabilityStatement/ihe-mma-requestplacer" />
 	<version value="20171031" />
-	<title value="IHE Universal Barcode Processor Capability Statement" />
 	<name value="IHE-UBP Barcode Processor" />
+	<title value="IHE Universal Barcode Processor Capability Statement" />
 	<status value="draft" />
 	<experimental value="true" />
 	<date value="2017-11-03" />
@@ -22,9 +23,14 @@
 	<copyright value="Copyright &#xA9; IHE" />
 	<kind value="instance" />
 	<fhirVersion value="3.0.1" />
-	<implementationGuide
-		value="https://ihe.net/fhir/ImplementationGuide/mma" />
-	<profile>
-		<reference value="http://ihe.net/fhir/StructureDefinition/IHE.mma.AdministrationRequest" />
-	</profile>
+	<format value="xml"/> 
+	<format value="json"/>
+	<implementationGuide value="https://ihe.net/fhir/ImplementationGuide/mma" />
+	<rest>
+	<mode value="client" />
+	<resource>
+		<type value="StructureDefinition" />
+		<profile value="http://ihe.net/fhir/StructureDefinition/IHE.MMA.AdministrationRequest" />
+	</resource>
+	</rest>
 </CapabilityStatement>
