@@ -92,6 +92,7 @@
   "spreadsheets": [
   ],
   "license": "Apache-2.0",
+  "npm-name": "ihe.pdqm",
   "resources": {
   }
 }

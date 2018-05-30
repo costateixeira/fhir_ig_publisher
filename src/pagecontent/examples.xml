@@ -6,16 +6,9 @@
             <div class="inner-wrapper">
                <div class="col-12"><br></br><ul>
                      <li>
-                        <p><b><a href="examplescenario-mma1-scenario.html">Mobile Medication Administration</a></b></p>
+                        <p><b><a href="examplescenario-mma1-scenario.html">Example 1</a></b></p>
                      </li>
-                     <p>This scenario demonstrates the process of getting the relevant medication instructions
-                        for a patient visit and reporting the results of administration. The scenario is as
-                        follows: After the prescription is issued, the institution schedules each individual
-                        administration event in the Medication Administration Record (MAR). When preparing
-                        for a visit, the nurse queries the MAR for the scheduled administrations, obtaining
-                        a bundle of records. The nurse then performs the care activities and registers the
-                        results in the device. Upon synchronization of the device and the institution, the
-                        results of administration are uploaded to the EHR, thus updating the MAR.
+                     <p>Insert Lorem Ipsum here
                      </p>
                   </ul>
                </div>

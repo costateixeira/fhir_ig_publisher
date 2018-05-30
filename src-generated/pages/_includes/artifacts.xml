@@ -72,6 +72,20 @@
 </td>
 <td>Medication Administration Consumer</td>
 </tr>
+<tr>
+<td style="column-width:30%">
+<a href="ihe-pdqm-client.html">
+                        •  PDQm - Client</a>
+</td>
+<td>PDQm Consumer</td>
+</tr>
+<tr>
+<td style="column-width:30%">
+<a href="ihe-pdqm-server.html">
+                        •  PDQm - Server</a>
+</td>
+<td>PDQm Server</td>
+</tr>
 </tbody>
 </table>
 </p>

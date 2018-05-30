@@ -18,7 +18,7 @@
 			<code value="US"/>
 		</coding>
 	</jurisdiction>
-	<packageId value="NoPackage"/> 
+	<packageId value="ihe.pdqm"/> 
 	<license value="Apache-2.0"/> 
  	<fhirVersion value="3.4.0"/>
 	
@@ -80,6 +80,24 @@
 			<exampleBoolean value="false"/>
 			
 		</resource>
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-pdqm-client"/>
+			</reference>
+			<name value="PDQm - Client"/>
+			<description value="PDQm Consumer"/>
+			<exampleBoolean value="false"/>
+			
+		</resource>
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-pdqm-server"/>
+			</reference>
+			<name value="PDQm - Server"/>
+			<description value="PDQm Server"/>
+			<exampleBoolean value="false"/>
+			
+		</resource>
 
 
 		<page>
@@ -123,11 +141,6 @@
 					<title value="Transactions"/>
 					<generation value="html"/>
 				</page>
-				<page>
-					<nameUrl value="glossary.html"/>
-					<title value="Glossary"/>
-					<generation value="html"/>
-				</page>
 			</page>
 
 		
@@ -153,12 +166,12 @@
 					<generation value="html"/>
 					<page>
 						<nameUrl value="wf_actorstransactions.html"/>
-						<title value="Introduction"/>
+						<title value="Actors and Transactions"/>
 						<generation value="html"/>
 					</page>
 					<page>
 						<nameUrl value="ct_actorstransactions.html"/>
-						<title value="Introduction"/>
+						<title value="Actors and Transactions"/>
 						<generation value="html"/>
 					</page>
 				</page>
@@ -167,11 +180,6 @@
 					<nameUrl value="examples.html"/>
 					<title value="Use Cases"/>
 					<generation value="html"/>
-					<page>
-						<nameUrl value="examplescenario-mma1-scenario.html"/>
-						<title value="Use Case 1 - Home Care Nurse shift"/>
-						<generation value="html"/>
-					</page>
 				</page>
 				
 			</page>
@@ -200,8 +208,6 @@
 			</page>
 			
 <!--
-
-				
 			<page>
 				<nameUrl value="vol2.html"/>
 				<title value="Volume 2"/>

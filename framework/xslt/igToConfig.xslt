@@ -15,6 +15,7 @@
   <xsl:variable name="includeXml" select="not(translate(substring($excludexml,1,1), $uppercase, $lowercase)='y')"/>
   <xsl:variable name="includeJson" select="not(translate(substring($excludejson,1,1), $uppercase, $lowercase)='y')"/>
   <xsl:variable name="includeTtl" select="not(translate(substring($excludettl,1,1), $uppercase, $lowercase)='y')"/>
+  <xsl:variable name="packageId" select="/f:ImplementationGuide/f:packageId/@value"/>
   <xsl:variable name="license" select="/f:ImplementationGuide/f:license/@value"/>
   <xsl:output method="text" encoding="UTF-8"/>
   <xsl:template match="/f:ImplementationGuide">
@@ -180,6 +181,7 @@
     <xsl:text>
   ],
   "license": "</xsl:text><xsl:value-of select="$license"/><xsl:text>",
+  "npm-name": "</xsl:text><xsl:value-of select="$packageId"/><xsl:text>",
   "resources": {</xsl:text>
     <xsl:for-each select="f:package/f:resource">
       <xsl:variable name="type" select="substring-before(f:sourceReference/f:reference/@value, '/')"/>
